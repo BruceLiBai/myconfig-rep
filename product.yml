@@ -1,14 +1,14 @@
-server:
-  port: 8080
+# server:
+#   port: 8080
 
-spring:
-  datasource:
-    product:
-      url: jdbc:mysql://192.168.7.108/product?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
-      username: test
-      password: test
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      type: com.alibaba.druid.pool.DruidDataSource
+# spring:
+#   datasource:
+#     product:
+#       url: jdbc:mysql://192.168.7.108/product?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8
+#       username: test
+#       password: test
+#       driver-class-name: com.mysql.cj.jdbc.Driver
+#       type: com.alibaba.druid.pool.DruidDataSource
 
-logging:
-  config: classpath:log4j2.xml
+# logging:
+#   config: classpath:log4j2.xml
