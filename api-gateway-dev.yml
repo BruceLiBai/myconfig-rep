@@ -17,7 +17,7 @@ zuul:
     # order: /myOrder/**
   # 禁止哪些路由不可以访问
   ignored-patterns:
-    - /order/**
+    - /myOrder/**
 
 management:
   endpoints:
