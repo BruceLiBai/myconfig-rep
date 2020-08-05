@@ -5,3 +5,22 @@ logging:
   config: classpath:log4j2.xml
 
 env: dev
+
+zuul:
+  routes:
+    myOrder:
+      path: /myOrder/**
+      serviceId: order
+      # 不对头部做过滤
+      sensitiveHeaders:
+    # 自定义路由简写
+    # order: /myOrder/**
+  # 禁止哪些路由不可以访问
+  ignored-patterns:
+    - /order/**
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
